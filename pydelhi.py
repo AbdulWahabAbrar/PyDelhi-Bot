@@ -22,44 +22,44 @@ with open('volunteer.json', 'r') as fp:
     volunteer = ast.literal_eval(fp.read())
     #print(volunteer)
 
-print("I'm On..!!")
+print("I'm here..!!")
 
 def start(bot, update, args):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
         bot.sendMessage(chat_id=update.message.chat_id,text='''
-Hi! My powers are solely for the service of PyDelhi Community
+Hi! I have been trained for serving the PyConf Hyderabad Community only!
 Use /help to get /help''')
 
 def mailing_list(bot, update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id,text='http://bit.ly/pydelhi-mailinglist')
+        bot.sendMessage(chat_id=update.message.chat_id,text='https://mail.python.org/mm3/mailman3/lists/hydpy.python.org')
 
 def website(bot, update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id,text='https://pydelhi.org/')
+        bot.sendMessage(chat_id=update.message.chat_id,text='https://http://pyconf.hydpy.org/')
 
-def irc(bot, update):
-        bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
-        sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id,text='http://bit.ly/pydelhi-irc')
+#def irc(bot, update):
+ #       bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
+  #      sleep(0.2)
+   #     bot.sendMessage(chat_id=update.message.chat_id,text='http://bit.ly/pydelhi-irc')
 
 def twitter(bot, update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id,text='http://bit.ly/pydelhi-twitter')
+        bot.sendMessage(chat_id=update.message.chat_id,text='https://twitter.com/hydPython')
 
 def meetup(bot, update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id,text='http://wwww.meetup.com/pydelhi')
+        bot.sendMessage(chat_id=update.message.chat_id,text='https://www.meetup.com/Hyderabad-Python-Meetup-Group/')
 
 def nextmeetup(bot, update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        r=requests.get('http://api.meetup.com/pydelhi/events', params=meetupApi)
+        r=requests.get('http://api.meetup.com/Hyderabad-Python-Meetup-Group/events', params=meetupApi)
         #print(r.json()[0])
         event_link=r.json()[0]['link']
         date_time=r.json()[0]['time']//1000
