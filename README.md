@@ -1,4 +1,4 @@
-# [PyDelhi](https://pydelhi.org) Bot
+# [PyConf](https://pyconf.hyd.org) Bot
 Simple Python based bot for telegram to fetch links.
 
 ### Current Version - Version 2.2
