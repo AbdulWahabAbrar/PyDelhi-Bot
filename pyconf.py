@@ -102,7 +102,7 @@ def github(bot, update):
 def invitelink(bot,update):
         bot.sendChatAction(chat_id=update.message.chat_id, action=ChatAction.TYPING)
         sleep(0.2)
-        bot.sendMessage(chat_id=update.message.chat_id, text='')
+        bot.sendMessage(chat_id=update.message.chat_id, text='https://t.me/joinchat/DENc8kJQtctdg3H5JfTXvg')
 
 def help(bot, update):
 	bot.sendChatAction(chat_id = update.message.chat_id, action=ChatAction.TYPING)
